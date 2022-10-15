@@ -7,20 +7,21 @@ h1, h3{
     text-transform: uppercase;    
 }
 
+
 /* Navbar section */
 .logo{
-    height: 80px;
-    margin-left: 5rem;
+    height: 60px;
+    margin-left: 3rem;
     margin-right: 3rem;
 }
 .navbar{
     background: rgba(255,255, 255, 0.5) !important;    
 }
 .navbar-nav{    
-    margin-right: 5rem;
+    margin-right: 1rem;
 }
 .nav-item{
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 .nav-link{
     font-size: 1.125rem;
@@ -42,7 +43,8 @@ h1, h3{
 }
 .call{
     display: flex; 
-    margin-right: 2rem;
+    margin-right: 3rem;
+    padding-right: 1rem;
     padding-left: 1rem;
     border-left: 2px solid #d3be00;
     align-items: center;
@@ -50,6 +52,11 @@ h1, h3{
 .call-i img{
     width: 50px;
     height: 50px;
+}
+@media screen and (max-width:1330px) {
+    .call{
+        display: none;
+    }
 }
 .btn{
     border: none;
@@ -67,7 +74,7 @@ h1, h3{
 }
 .phone-number{
     color: #3f98fd;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 800;
 }
 a{
@@ -344,7 +351,7 @@ a:hover::after span{
     text-align: center;
 }
 .service-card{
-    width: 18% !important;
+    width: 20% !important;
     height: 450px;
     background: #181818;
     border-radius: 5px;
@@ -359,14 +366,14 @@ a:hover::after span{
 .service-card h3{
     font-size: 1.75rem; 
     font-weight: 600;   
-    padding-left: 2rem;
+    padding-left: 1rem;
     color: #fff;
 }
 .service-card p{
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-size: 1.25rem;
     color: #7a7a7a;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 @media screen and (max-width:992px){
     .service-card{
@@ -392,7 +399,8 @@ a:hover::after span{
     font-size: 1.5rem;
     padding: 2rem 1rem;
     display: none;
-    text-align: right;    
+    text-align: right;
+      
 }
 .service-card:hover .card-link{
     display: block;
@@ -436,12 +444,11 @@ a:hover::after span{
     position: relative;
     display: flex;
     background-image: url(img/group-team.jpg);
-    max-width: 1200px;
+    width: auto;
     height: 600px;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    border-radius: 5px;    
-    
+    border-radius: 5px; 
     background-size: cover;   
 }
 .exp-circle{   
